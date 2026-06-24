@@ -1,0 +1,14 @@
+* text=auto eol=lf
+
+*.blade.php diff=html
+*.css diff=css
+*.html diff=html
+*.js diff=javascript
+*.json diff=json
+*.md diff=markdown
+*.php diff=php
+*.vue diff=html
+
+/.github export-ignore
+CHANGELOG.md export-ignore
+.styleci.yml export-ignore
