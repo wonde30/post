@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import { useAuthStore } from '@/stores/auth'
 import PostsView from '@/views/PostsView.vue'
 
 const router = createRouter({
