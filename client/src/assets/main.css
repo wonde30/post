@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+
+/* App-wide base. Tailwind v4 needs no config file — utilities just work. */
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900 antialiased;
+}
