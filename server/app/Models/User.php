@@ -4,12 +4,13 @@ namespace App\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-use Laravel\Sanctum\HasApiTokens; // ← add this import
+use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class User extends Authenticatable
 {
-    use HasApiTokens, Notifiable; // ← add HasApiTokens here
+    use HasApiTokens, HasFactory, Notifiable;
 
     protected $fillable = [
         'name',
@@ -29,6 +30,7 @@ class User extends Authenticatable
             'password'          => 'hashed',
         ];
     }
+
     public function posts(): HasMany
     {
         return $this->hasMany(Post::class);
