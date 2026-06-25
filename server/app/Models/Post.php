@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class Post extends Model
 {
     protected $fillable = [
-        'user_id',   // ← add this
+        'user_id',  
         'title',
         'body',
         'author',
