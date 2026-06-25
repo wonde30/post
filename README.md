@@ -17,7 +17,7 @@ A full-stack web application built with Laravel 13 and Vue 3.
 * Pinia
 * Axios
 * Tailwind CSS 4
-
+## GitHub PR Practice
 ## Project Structure
 
 ```text
